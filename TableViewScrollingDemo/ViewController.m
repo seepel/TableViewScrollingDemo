@@ -14,16 +14,38 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    return 10;
 }
 
-- (void)didReceiveMemoryWarning
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = [NSString stringWithFormat:@"Row: %d", indexPath.row];
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [NSString stringWithFormat:@"Section: %d", section];
+}
+
+- (void)tableView:(DemoTableView *)tableView didSetContentOffset:(CGPoint)contentOffset
+{
+    self.title = [NSString stringWithFormat:@"Offset: %2.f", contentOffset.y];
+}
+
+- (IBAction)scrollToTopAnimated:(id)sender {
+    [UIView animateWithDuration:0.5 animations:^(void) {
+        self.tableView.contentOffset = CGPointMake(0, -self.tableView.contentInset.top);
+    }];
 }
 
 @end

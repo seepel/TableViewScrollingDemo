@@ -14,7 +14,6 @@
 		BB1951C418B14ADC001CCEFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1951C318B14ADC001CCEFD /* main.m */; };
 		BB1951C818B14ADC001CCEFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1951C718B14ADC001CCEFD /* AppDelegate.m */; };
 		BB1951CB18B14ADC001CCEFD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1951C918B14ADC001CCEFD /* Main_iPhone.storyboard */; };
-		BB1951CE18B14ADC001CCEFD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1951CC18B14ADC001CCEFD /* Main_iPad.storyboard */; };
 		BB1951D118B14ADC001CCEFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1951D018B14ADC001CCEFD /* ViewController.m */; };
 		BB1951D318B14ADC001CCEFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1951D218B14ADC001CCEFD /* Images.xcassets */; };
 		BB1951DA18B14ADC001CCEFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1951D918B14ADC001CCEFD /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		BB1951DC18B14ADC001CCEFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1951BB18B14ADC001CCEFD /* UIKit.framework */; };
 		BB1951E418B14ADC001CCEFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB1951E218B14ADC001CCEFD /* InfoPlist.strings */; };
 		BB1951E618B14ADC001CCEFD /* TableViewScrollingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1951E518B14ADC001CCEFD /* TableViewScrollingDemoTests.m */; };
+		BB1951F118B14BC6001CCEFD /* DemoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1951F018B14BC6001CCEFD /* DemoTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		BB1951C618B14ADC001CCEFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB1951C718B14ADC001CCEFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB1951CA18B14ADC001CCEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		BB1951CD18B14ADC001CCEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		BB1951CF18B14ADC001CCEFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB1951D018B14ADC001CCEFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB1951D218B14ADC001CCEFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		BB1951E118B14ADC001CCEFD /* TableViewScrollingDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewScrollingDemoTests-Info.plist"; sourceTree = "<group>"; };
 		BB1951E318B14ADC001CCEFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB1951E518B14ADC001CCEFD /* TableViewScrollingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewScrollingDemoTests.m; sourceTree = "<group>"; };
+		BB1951EF18B14BC6001CCEFD /* DemoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableView.h; sourceTree = "<group>"; };
+		BB1951F018B14BC6001CCEFD /* DemoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +118,10 @@
 				BB1951C618B14ADC001CCEFD /* AppDelegate.h */,
 				BB1951C718B14ADC001CCEFD /* AppDelegate.m */,
 				BB1951C918B14ADC001CCEFD /* Main_iPhone.storyboard */,
-				BB1951CC18B14ADC001CCEFD /* Main_iPad.storyboard */,
 				BB1951CF18B14ADC001CCEFD /* ViewController.h */,
 				BB1951D018B14ADC001CCEFD /* ViewController.m */,
+				BB1951EF18B14BC6001CCEFD /* DemoTableView.h */,
+				BB1951F018B14BC6001CCEFD /* DemoTableView.m */,
 				BB1951D218B14ADC001CCEFD /* Images.xcassets */,
 				BB1951BE18B14ADC001CCEFD /* Supporting Files */,
 			);
@@ -231,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1951CE18B14ADC001CCEFD /* Main_iPad.storyboard in Resources */,
 				BB1951D318B14ADC001CCEFD /* Images.xcassets in Resources */,
 				BB1951CB18B14ADC001CCEFD /* Main_iPhone.storyboard in Resources */,
 				BB1951C218B14ADC001CCEFD /* InfoPlist.strings in Resources */,
@@ -255,6 +256,7 @@
 			files = (
 				BB1951D118B14ADC001CCEFD /* ViewController.m in Sources */,
 				BB1951C818B14ADC001CCEFD /* AppDelegate.m in Sources */,
+				BB1951F118B14BC6001CCEFD /* DemoTableView.m in Sources */,
 				BB1951C418B14ADC001CCEFD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,14 +294,6 @@
 				BB1951CA18B14ADC001CCEFD /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		BB1951CC18B14ADC001CCEFD /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB1951CD18B14ADC001CCEFD /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		BB1951E218B14ADC001CCEFD /* InfoPlist.strings */ = {

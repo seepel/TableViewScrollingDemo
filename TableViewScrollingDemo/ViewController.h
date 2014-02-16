@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DemoTableView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController <DemoTableViewDelegate>
+- (IBAction)scrollToTopAnimated:(id)sender;
 
 @end
